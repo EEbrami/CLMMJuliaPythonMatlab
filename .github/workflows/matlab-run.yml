@@ -1,0 +1,13 @@
+name: Run GH_Quadrature
+
+on: [push, pull_request]
+
+jobs:
+  run-gh-quadrature:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run GH_Quadrature
+        uses: matlab-actions/run-command@v2
+        with:
+          command: GH_Quadrature(3, 2, eye(2))
