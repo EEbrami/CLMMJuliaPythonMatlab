@@ -47,7 +47,7 @@ function growth_main(Method)
 
 fprintf('\n\n\n\n\nBeginning execution with method %i\n', Method)
 
-% Method = 1;   % Choose a solution method: "1", "2", "3", "4", "5", "6", "7"
+% Method = 7;   % Choose a solution method: "1", "2", "3", "4", "5", "6", "7"
 
 % "1" - envelope condition method iterating on value function (ECM-VF)
 % "2" - conventional value function interation (VFI)
@@ -465,5 +465,6 @@ for D = 2:5 % For polynomial degrees from 2 to 5...
     fprintf(1,'Polynomial of degree = %i:\nRunning time = %.2f, Mean residuals = %.2f, Max residuals = %.2f\n\n',Degree(D),CPU(D),Mean_Residuals(D),Max_Residuals(D));
             % Display the results
 end
+
 
 end  % function
